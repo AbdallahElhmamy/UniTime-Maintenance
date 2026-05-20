@@ -23,7 +23,7 @@ services:
         environment: 
             - MYSQL_RANDOM_ROOT_PASSWORD=yes
             - MYSQL_USER=timetable
-            - MYSQL_PASSWORD=unitime
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
             - MYSQL_DATABASE=timetable
         build:
             context: ..
